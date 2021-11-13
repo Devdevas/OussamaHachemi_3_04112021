@@ -1,0 +1,19 @@
+{
+  "name": "p3_hachemi_package",
+  "version": "1.0.0",
+  "description": " Ohmyfood_project3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devdevas/OussamaHachemi_3_04112021.git"
+  },
+  "author": "Oussama Hachemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devdevas/OussamaHachemi_3_04112021/issues"
+  },
+  "homepage": "https://github.com/Devdevas/OussamaHachemi_3_04112021#readme"
+}
