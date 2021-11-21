@@ -4,7 +4,8 @@
   "description": " Ohmyfood_project3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,10 @@
   },
   "author": "Oussama Hachemi",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Devdevas/OussamaHachemi_3_04112021/issues"
   },
   "homepage": "https://github.com/Devdevas/OussamaHachemi_3_04112021#readme"
+  
 }

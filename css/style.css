@@ -12,7 +12,7 @@ body {
 
 #block-page {
   width: 100%;
-  max-width: 375px;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -62,12 +62,24 @@ header #logo {
 .presentation__title {
   text-align: center;
   margin-bottom: 10px;
+  max-width: 300px;
+}
+@media screen and (min-width: 665px) {
+  .presentation__title {
+    max-width: none;
+  }
 }
 .presentation p {
   text-align: center;
   font-weight: 400;
   margin-bottom: 15px;
   font-size: 1.1em;
+  max-width: 350px;
+}
+@media screen and (min-width: 665px) {
+  .presentation p {
+    max-width: none;
+  }
 }
 .presentation__button {
   border: none;
@@ -89,18 +101,33 @@ header #logo {
   padding: 45px 20px;
 }
 .fonctionnement__alloptions {
-  margin: 30px 0 30px 10px;
+  margin: 30px 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .fonctionnement__option {
   display: flex;
+  width: 100%;
+  max-width: 100%;
   background: #f5f5f5;
   padding: 26px 0 23px;
-  margin-bottom: 25px;
+  margin: 0 15px 25px 15px;
   border-radius: 20px;
   box-shadow: 1px 5px 10px 0 #e3e3e3;
 }
+@media screen and (min-width: 665px) {
+  .fonctionnement__option {
+    max-width: 45%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement__option {
+    max-width: 30%;
+  }
+}
 .fonctionnement__option:hover {
-  background: #f4eefc;
+  background: #f2eafb;
 }
 .fonctionnement__option:hover i {
   color: #9356DC;
@@ -111,7 +138,7 @@ header #logo {
 }
 .fonctionnement p {
   margin-right: 20px;
-  margin-left: -10px;
+  margin-left: -12px;
 }
 .fonctionnement p:first-child {
   color: white;
@@ -124,23 +151,36 @@ header #logo {
 
 .restaurants {
   background: #f5f5f5;
-  padding: 45px 20px;
+  padding: 45px 10px 60px 10px;
+}
+.restaurants h2 {
+  margin-left: 10px;
 }
 .restaurants__allcards {
-  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .restaurants__card {
+  width: 100%;
+  max-width: 100%;
   background-color: white;
-  margin-bottom: 20px;
+  margin: 20px 10px 0 10px;
   padding-bottom: 15px;
   border-radius: 15px;
   position: relative;
   box-shadow: 1px 5px 10px 0 #e3e3e3;
 }
+@media screen and (min-width: 665px) {
+  .restaurants__card {
+    max-width: 46%;
+  }
+}
 .restaurants__card .nouveau {
   position: absolute;
-  bottom: 207px;
-  left: 242px;
+  top: 0;
+  right: 0;
+  margin: 15px;
   background: #99E2D0;
   width: 58px;
   padding: 6px 11px;
@@ -151,16 +191,26 @@ header #logo {
 }
 .restaurants__card .img-container {
   max-height: 175px;
-  max-width: 335px;
+  max-width: 100%;
   overflow: hidden;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 .restaurants__card img {
   position: relative;
-  width: 340px;
-  bottom: 50px;
+  width: 100%;
   z-index: 1;
+  bottom: 50px;
+}
+@media screen and (min-width: 665px) {
+  .restaurants__card img {
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants__card img {
+    bottom: 100px;
+  }
 }
 .restaurants__card figcaption {
   display: flex;
@@ -181,32 +231,45 @@ header #logo {
 }
 .restaurants__icon--empty {
   left: 27px;
-  opacity: 100%;
+  opacity: 0;
   color: #767676;
 }
 .restaurants__icon--full {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
 }
 
 footer {
   background: #2e2e2e;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 footer li, footer a {
   list-style: none;
   color: white;
-  margin-bottom: 10px;
+  margin: 0 180px 10px 0;
   font-weight: 400;
+}
+@media screen and (min-width: 665px) {
+  footer li, footer a {
+    margin-right: 20px;
+  }
 }
 footer h3 {
   color: white;
   font-family: "Shrikhand", cursive;
   font-size: 1.1em;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin: 0 50px 20px 0;
 }
 footer .fa-utensils {
   margin-right: 12px;
