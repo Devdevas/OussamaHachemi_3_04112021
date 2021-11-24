@@ -1,0 +1,38 @@
+footer{
+    background: darken($background-color, 78%);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    li, a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        margin: 0 40% 10px 0;
+        font-weight: $regular;
+        cursor: pointer;
+        @include breakpoints-tablet{
+            margin-right: 20px;
+        }
+    }
+    h3{
+        color: white;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.1em;
+        font-weight: $regular;
+        margin: 0 50px 20px 0;
+    }
+    .fa-utensils{
+        margin-right: 12px;
+        font-size: 0.9em;
+    }
+    .fa-hands-helping{
+        font-size: 0.7em;
+        margin-right: 10px;
+    }
+}

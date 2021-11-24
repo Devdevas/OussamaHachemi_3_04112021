@@ -1,0 +1,12 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: #f5f5f5;
+$text-color: #333;
+$shadow-color: darken($background-color, 20%);
+$button-gradient: linear-gradient($secondary-color, $primary-color);
+$icon-color: darken($background-color, 50%);
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$breakpoints: (desktop: 992px, tablet: 667px);
