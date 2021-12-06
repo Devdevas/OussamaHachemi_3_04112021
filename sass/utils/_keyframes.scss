@@ -1,0 +1,41 @@
+@keyframes loading-background {
+    from{
+        transform: translatey(0);
+        opacity: 1;
+    }
+    to{
+        transform: translatey(-100%);
+        opacity: 0;
+    }
+}
+@keyframes circles{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes loading{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+@keyframes plats{
+    0%, 50%{
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(30%);
+    }
+}
+@keyframes plats-title {
+    from{
+        transform: translateX(-350%);
+    }
+}
