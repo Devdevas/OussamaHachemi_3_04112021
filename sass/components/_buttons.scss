@@ -35,7 +35,7 @@
         cursor: pointer;
         opacity: 0;
         background: linear-gradient(lighten($secondary-color, 5%), lighten($primary-color, 5%));
-        @include box-shadow(darken($shadow-color, 5%));
+        @include box-shadow(darken($shadow-color, 15%));
         transition: opacity 250ms ease-in-out;
     }
 }
@@ -76,7 +76,7 @@
         }
     }
     &:hover{
-        @include breakpoints-tablet{
+        @include breakpoints-desktop{
             ~ .restaurants__icon--empty{
                 opacity: 0;
             }

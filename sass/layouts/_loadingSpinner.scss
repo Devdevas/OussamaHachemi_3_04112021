@@ -1,0 +1,35 @@
+.loading-background{
+    background: $loading-gradient;
+    height: 100%;
+    max-height: none;
+    width: 100%;
+    max-width: 1280px;
+    position: fixed;
+    z-index: 3;
+    animation: loading-background 300ms 2500ms ease-in both;
+}
+.loading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    max-height: none;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 4;
+    animation: loading $anim-duration 3000ms ease-in-out forwards;
+    &__circle{
+        background: $tertiary-color;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        animation: circles $anim-duration ease-in-out 3 alternate both;
+        @for $i from 1 through 3{
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+    }
+}

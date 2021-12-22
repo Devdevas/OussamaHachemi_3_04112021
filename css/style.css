@@ -137,7 +137,7 @@ body {
   cursor: pointer;
   opacity: 0;
   background: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 1px 5px 10px 0 #b5b5b5;
+  box-shadow: 1px 5px 10px 0 darkgray;
   transition: opacity 250ms ease-in-out;
 }
 
@@ -177,7 +177,7 @@ body {
   transform: scale(1);
   opacity: 1;
 }
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 992px) {
   #btn-icon:hover ~ .restaurants__icon--empty, #btn-icon1:hover ~ .restaurants__icon--empty, #btn-icon2:hover ~ .restaurants__icon--empty, #btn-icon3:hover ~ .restaurants__icon--empty, #btn-icon4:hover ~ .restaurants__icon--empty {
     opacity: 0;
   }
